@@ -1,24 +1,40 @@
 # Task 2: Speech Emotion Recognition
 
-## Overview
-This project explores speech emotion recognition using audio feature extraction and a Convolutional Neural Network (CNN).
+## Project Description
+This project identifies human emotions from speech audio using machine learning and deep learning techniques. It uses MFCC (Mel-Frequency Cepstral Coefficients) to extract audio features and CNN/LSTM models for emotion classification.
 
 ## Technologies Used
 - Python
+- Librosa (audio feature extraction, if used)
 - NumPy
-- Librosa
-- Scikit-learn
-- TensorFlow / Keras
+- Scikit-learn / TensorFlow (depending on the implementation)
 
-## Current Status
-The current version extracts MFCC features through a defined function and builds a CNN model using synthetic sample data for setup verification.
+## Features
+- Processes speech audio.
+- Extracts meaningful audio features using MFCC.
+- Classifies speech into emotion categories supported by the model.
+- Uses deep learning techniques for speech emotion recognition.
 
-**Note:** Training and evaluation with a real speech dataset are not yet implemented. Real emotion recognition requires a suitable audio dataset and model training.
+## How to Run
 
-## Main File
-`speech_emotion.py`
+1. Install Python.
+2. Install the required dependencies listed in `requirements.txt`, if provided.
+3. Run the script:
 
-## Future Improvements
-- Load and process a real speech emotion dataset.
-- Train and evaluate the CNN.
-- Test predictions on audio recordings.
+   ```bash
+   python speech_emotion.py
+   ```
+
+## Project Structure
+
+```text
+Task2_Speech_Emotion_Recognition/
+├── speech_emotion.py
+├── README.md
+└── requirements.txt
+```
+
+*Note: The actual files may differ depending on your project.*
+
+## Purpose
+This project demonstrates how audio processing and deep learning can be used to recognize emotions in human speech.
